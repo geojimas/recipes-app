@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+svg:hover path {
+    fill: red;
+    transition: all ease 0.3s;
+}

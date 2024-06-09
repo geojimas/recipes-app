@@ -1,0 +1,12 @@
+import daisyui from 'daisyui'
+
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  daisyui: {
+    themes: ['light', 'dark', 'cupcake', 'bumblebee']
+  },
+  theme: {
+    extend: {}
+  },
+  plugins: [daisyui]
+}
