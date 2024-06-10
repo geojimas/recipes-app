@@ -1,6 +1,6 @@
 ## Recipes App with Search functionality and save to favorites
 
-### Build with React
+### Build with React, TailwindCSS & Redux Toolkit
 
 ![alt text](./public/preview.png)
 

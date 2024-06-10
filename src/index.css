@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 
+
+
+* {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
 svg:hover path {
     fill: red;
     transition: all ease 0.3s;
