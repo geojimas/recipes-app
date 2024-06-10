@@ -16,12 +16,6 @@ const RecipePage = () => {
     }
   }
 
-  const convertMinutesToHours = totalMinutes => {
-    const hours = Math.floor(totalMinutes / 60)
-    const minutes = totalMinutes % 60
-    return `${hours}h ${minutes}m`
-  }
-
   return (
     <div className="bg-[#efedf0] p-10 flex-1">
       <div className="max-w-screen-lg mx-auto">
@@ -59,16 +53,7 @@ const RecipePage = () => {
           {error && <p>Error: {error}</p>}
           {data.hits &&
             data.hits.map((recipe, index) => (
-              <RecipeCard
-                key={index}
-                label={recipe.recipe.label}
-                image={recipe.recipe.image}
-                calories={Math.round(recipe.recipe.calories)}
-                totalTime={convertMinutesToHours(recipe.recipe.totalTime)}
-                portion={recipe.recipe.yield}
-                url={recipe.recipe.url}
-                {...getRandomColor()}
-              />
+              <RecipeCard recipeObj={recipe.recipe} key={index} {...getRandomColor()} />
             ))}
           <CardLoading loading={loading} />
         </div>
