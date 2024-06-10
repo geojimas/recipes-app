@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const APP_ID = 'd1df89bd';
-const APP_KEY = '12e4df078984a0dc2b6a6cca6ac0cb4a';
+const APP_ID = import.meta.env.VITE_APP_ID
+const APP_KEY = import.meta.env.VITE_APP_KEY
 
 const useRecipes = (querySearch) => {
   const [data, setData] = useState([]);
