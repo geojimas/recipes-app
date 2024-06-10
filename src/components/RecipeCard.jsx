@@ -32,7 +32,6 @@ const RecipeCard = ({ recipeObj, bg, badge }) => {
           className="rounded-md w-full h-full object-cover cursor-pointer"
         />
         <div className="absolute bottom-2 left-2 bg-white rounded-full p-1 cursor-pointer flex items-center">
-          <img src="/soup.svg" alt="soup" />
           <p className="text-sm font-bold">
             <span className="text-blue-600 mx-1">{portion}</span>Servings
           </p>
