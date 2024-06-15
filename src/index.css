@@ -6,9 +6,9 @@
 
 
 * {
-    font-family: "Architects Daughter", cursive;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
 }
 
